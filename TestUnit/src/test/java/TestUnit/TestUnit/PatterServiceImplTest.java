@@ -11,11 +11,11 @@ public class PatterServiceImplTest {
 	public void testComputeLPSArray() {
 		
 		String pat = "ABABCABAB";
-		int M = pat.length();
+		int N = pat.length();
 		int[] lps = new int[pat.length()];
 		String result = "";
 
-		new PatterServiceImpl().computeLPSArray(lps, M, pat);
+		new PatterServiceImpl().computeLPSArray(lps, N, pat);
 
 		for (int i = 0; i < lps.length; ++i) {
 			result += lps[i] + " ";
